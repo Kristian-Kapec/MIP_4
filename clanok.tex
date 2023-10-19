@@ -9,13 +9,14 @@
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+\usepackage{subcaption}
 
 \usepackage{cite}
 %\usepackage{times}
 
 \pagestyle{headings}
 
-\title{Data mining in cybersecurity\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2023/24, vedenie: Richard Marko}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Získavanie dát a strojové učenie v oblasti kyberbezpečnosti\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2023/24, vedenie: Richard Marko}} % meno a priezvisko vyučujúceho na cvičeniach
 
 \author{Kristián Kapec\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
@@ -32,7 +33,7 @@
 \maketitle
 
 \begin{abstract}
-\ldots
+V tejto modernej a digitálnej dobe je veľmi dôležité chránenie citlivých údajov a dát. Práve na tieto účely nám slúži získavanie dát, ktoré umožňuje zbierať a analyzovať informácie o útokoch, na základe ktorých môže strojové učenie automaticky identifikovať hrozby v reálnom čase, čím sa zvyšuje úroveň bezpečnosti a ochrany dát.  V tomto článku zhodnotíme stav týchto technológií v súčasnosti, ich efektívnosť a rýchlosť detekcie hrozieb. V článku sa taktiež zameriame na výzvy späté s týmito technológiami a pozrieme sa aj na ich možný budúci vývoj . Technológie sa neustále zlepšujú a preto je veľmi dôležité aby aj tieto ochranné prvky napredovali dopredu aby nás dokázali ochrániť aj pred novými hrozbami
 \end{abstract}
 
 
@@ -47,8 +48,20 @@ Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitej
 Záverečné poznámky prináša časť~\ref{zaver}.
 
 
-
 \section{Nejaká časť} \label{nejaka}
+\begin{figure}[h!]
+\centering
+\begin{subfigure}[b]{0.4\linewidth}
+  \includegraphics[width=\linewidth]{diagram1.png}
+  \caption{ Diagram1}
+  \label{fig:Diagram1}
+\end{subfigure}
+\begin{subfigure}[b]{0.4\linewidth}
+  \includegraphics[width=\linewidth]{diagram2.png}
+  \caption{ Diagram2}
+  \label{fig:Diagram2}
+\end{subfigure}
+\end{figure}
 
 Z obr.~\ref{f:rozhod} je všetko jasné. 
 
@@ -120,5 +133,6 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
+
 \bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
